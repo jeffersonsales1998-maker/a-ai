@@ -1,0 +1,6 @@
+{
+  "name": "Sabor Do Açai - Delivery",
+  "description": "Monte seu açaí, escolha os adicionais e receba em casa em minutos. Parceiro oficial iFood com entrega grátis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

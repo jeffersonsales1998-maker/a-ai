@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <radialGradient id="bgGlowSingle" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#FAF5FF"/>
+      <stop offset="100%" stop-color="#F3E8FF"/>
+    </radialGradient>
+    <linearGradient id="acaiGradS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581C87"/>
+      <stop offset="50%" stop-color="#3B0764"/>
+      <stop offset="100%" stop-color="#240338"/>
+    </linearGradient>
+    <linearGradient id="cupGlassS" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="25%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+      <stop offset="95%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="badgeSingle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+    <filter id="shadowSingle" x="-15%" y="-15%" width="130%" height="135%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.15   0 0 0 0 0   0 0 0 0 0.25  0 0 0 0.35 0"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" rx="24" fill="url(#bgGlowSingle)"/>
+  <ellipse cx="250" cy="430" rx="140" ry="22" fill="#3B0764" opacity="0.22"/>
+
+  <!-- Centered Single Cup -->
+  <g transform="translate(190, 115)" filter="url(#shadowSingle)">
+    <!-- Cup Body -->
+    <path d="M 12 60 L 108 60 L 92 310 L 28 310 Z" fill="url(#acaiGradS)"/>
+
+    <!-- Layers of Leite em Pó & Morango & Granola -->
+    <path d="M 22 120 Q 60 135 98 120 L 95 145 Q 60 160 25 145 Z" fill="#FEF3C7" opacity="0.95"/>
+    <path d="M 25 200 Q 60 215 95 200 L 92 225 Q 60 240 28 225 Z" fill="#FDE68A" opacity="0.9"/>
+    
+    <!-- Drizzle along side inside -->
+    <path d="M 35 145 Q 42 180 38 200 Q 35 205 40 205 Q 45 205 43 185 Q 45 160 48 145 Z" fill="#FEF3C7"/>
+
+    <!-- Plastic Glass shine -->
+    <path d="M 12 60 L 108 60 L 92 310 L 28 310 Z" fill="url(#cupGlassS)"/>
+    <path d="M 22 65 L 32 65 L 40 305 L 30 305 Z" fill="#FFFFFF" opacity="0.32"/>
+
+    <!-- Rim -->
+    <ellipse cx="60" cy="60" rx="48" ry="9" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- High Acai Swirl Top -->
+    <path d="M 10 60 Q 60 -5 110 60 Z" fill="#4A044E"/>
+    <ellipse cx="60" cy="48" rx="45" ry="18" fill="#6B21A8"/>
+    <path d="M 32 45 Q 60 15 88 45 Z" fill="#7E22CE"/>
+
+    <!-- Topping: Fresh Strawberries -->
+    <g transform="translate(42, 5) scale(0.9)">
+      <path d="M20,10 C35,10 40,25 35,45 C30,58 20,68 20,68 C20,68 10,58 5,45 C0,25 5,10 20,10 Z" fill="#EF4444"/>
+      <circle cx="16" cy="28" r="1.8" fill="#FEF08A"/>
+      <circle cx="25" cy="34" r="1.8" fill="#FEF08A"/>
+      <circle cx="19" cy="48" r="1.8" fill="#FEF08A"/>
+      <path d="M14,12 C10,5 5,8 8,14 C12,12 18,12 20,10 C22,12 28,12 32,14 C35,8 30,5 26,12 Z" fill="#22C55E"/>
+    </g>
+
+    <!-- Topping: Banana slices -->
+    <g transform="translate(10, 24) scale(0.85)">
+      <circle cx="20" cy="20" r="16" fill="#FEF08A" stroke="#FDE047" stroke-width="2"/>
+      <circle cx="20" cy="20" r="11" fill="#FFFBEB"/>
+      <circle cx="20" cy="20" r="2.5" fill="#CA8A04"/>
+    </g>
+
+    <!-- Second banana slice -->
+    <g transform="translate(76, 28) scale(0.75)">
+      <circle cx="20" cy="20" r="16" fill="#FEF08A" stroke="#FDE047" stroke-width="2"/>
+      <circle cx="20" cy="20" r="2.5" fill="#CA8A04"/>
+    </g>
+
+    <!-- Condensed milk drizzle top -->
+    <path d="M 22 55 Q 45 40 70 58 Q 88 42 102 52" fill="none" stroke="#FEF3C7" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Crunchy granola clusters -->
+    <circle cx="28" cy="54" r="3" fill="#D97706"/>
+    <circle cx="55" cy="50" r="2.5" fill="#B45309"/>
+    <circle cx="85" cy="52" r="3.2" fill="#F59E0B"/>
+    <circle cx="98" cy="56" r="2.2" fill="#D97706"/>
+  </g>
+
+  <!-- Tag (Top Left) -->
+  <g transform="translate(24, 24)">
+    <rect width="160" height="50" rx="25" fill="#7E22CE" filter="url(#shadowSingle)"/>
+    <text x="80" y="24" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" text-anchor="middle">
+      AÇAÍ INDIVIDUAL
+    </text>
+    <text x="80" y="40" fill="#FDE047" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle">
+      SUPER CREMOSO
+    </text>
+  </g>
+
+  <!-- 9 Complementos Grátis Badge (Bottom Right) -->
+  <g transform="translate(285, 418)">
+    <rect width="190" height="42" rx="21" fill="#15803D" stroke="#FFFFFF" stroke-width="2" filter="url(#shadowSingle)"/>
+    <text x="95" y="26" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">
+      + 9 COMPLEMENTOS GRÁTIS
+    </text>
+  </g>
+</svg>

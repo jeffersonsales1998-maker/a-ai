@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Background studio light with fresh green mint tint -->
+    <radialGradient id="bgGlowZero" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#ECFDF5"/>
+      <stop offset="100%" stop-color="#D1FAE5"/>
+    </radialGradient>
+    
+    <!-- Darker rich Acai gradient (zero sugar pure açai) -->
+    <linearGradient id="acaiZeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4C1D95"/>
+      <stop offset="50%" stop-color="#3B0764"/>
+      <stop offset="100%" stop-color="#1E0226"/>
+    </linearGradient>
+
+    <!-- Plastic cup transparency shine -->
+    <linearGradient id="cupGlassZero" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="25%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+      <stop offset="95%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Green zero badge gradient -->
+    <linearGradient id="badgeGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Drop shadow -->
+    <filter id="shadowZero" x="-10%" y="-10%" width="120%" height="125%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.05   0 0 0 0 0.15   0 0 0 0 0.1  0 0 0 0.35 0"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" rx="24" fill="url(#bgGlowZero)"/>
+
+  <!-- Soft surface shadow for both cups -->
+  <ellipse cx="250" cy="425" rx="190" ry="25" fill="#064E3B" opacity="0.16"/>
+  <ellipse cx="190" cy="425" rx="75" ry="18" fill="#064E3B" opacity="0.22"/>
+  <ellipse cx="310" cy="425" rx="75" ry="18" fill="#064E3B" opacity="0.22"/>
+
+  <!-- ===== CUP 1 (LEFT / BACK) ===== -->
+  <g transform="translate(140, 150)" filter="url(#shadowZero)">
+    <path d="M 15 50 L 85 50 L 73 250 L 27 250 Z" fill="url(#acaiZeroGrad)"/>
+    
+    <!-- Chia / oat layers -->
+    <path d="M 23 115 Q 50 125 77 115 L 75 130 Q 50 140 25 130 Z" fill="#F3F4F6" opacity="0.85"/>
+    <path d="M 26 185 Q 50 195 74 185 L 72 200 Q 50 210 28 200 Z" fill="#E5E7EB" opacity="0.75"/>
+
+    <path d="M 15 50 L 85 50 L 73 250 L 27 250 Z" fill="url(#cupGlassZero)"/>
+    <ellipse cx="50" cy="50" rx="36" ry="7" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <path d="M 14 50 Q 50 4 86 50 Z" fill="#3B0764"/>
+    <ellipse cx="50" cy="42" rx="32" ry="14" fill="#581C87"/>
+
+    <!-- Kiwi slice -->
+    <g transform="translate(25, 20) scale(0.65)">
+      <circle cx="20" cy="20" r="16" fill="#84CC16" stroke="#4D7C0F" stroke-width="2"/>
+      <circle cx="20" cy="20" r="7" fill="#ECFCCB"/>
+      <!-- Kiwi seeds -->
+      <circle cx="16" cy="15" r="1" fill="#14532D"/>
+      <circle cx="24" cy="15" r="1" fill="#14532D"/>
+      <circle cx="25" cy="24" r="1" fill="#14532D"/>
+      <circle cx="15" cy="24" r="1" fill="#14532D"/>
+    </g>
+
+    <!-- Strawberry slice -->
+    <g transform="translate(50, 16) scale(0.6)">
+      <path d="M20,10 C35,10 40,25 35,45 C30,58 20,68 20,68 C20,68 10,58 5,45 C0,25 5,10 20,10 Z" fill="#DC2626"/>
+      <path d="M14,12 C10,5 5,8 8,14 C12,12 18,12 20,10 C22,12 28,12 32,14 C35,8 30,5 26,12 Z" fill="#16A34A"/>
+    </g>
+  </g>
+
+  <!-- ===== CUP 2 (RIGHT / FRONT) ===== -->
+  <g transform="translate(260, 130)" filter="url(#shadowZero)">
+    <path d="M 15 50 L 95 50 L 82 270 L 28 270 Z" fill="url(#acaiZeroGrad)"/>
+
+    <!-- Fitness pure layers -->
+    <path d="M 23 105 Q 55 120 87 105 L 85 125 Q 55 140 25 125 Z" fill="#F9FAFB" opacity="0.9"/>
+    <path d="M 26 180 Q 55 195 84 180 L 82 200 Q 55 215 28 200 Z" fill="#F3F4F6" opacity="0.8"/>
+
+    <path d="M 15 50 L 95 50 L 82 270 L 28 270 Z" fill="url(#cupGlassZero)"/>
+    <ellipse cx="55" cy="50" rx="41" ry="8" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Açai Mound -->
+    <path d="M 13 50 Q 55 -5 97 50 Z" fill="#2E0854"/>
+    <ellipse cx="55" cy="40" rx="38" ry="16" fill="#4C1D95"/>
+
+    <!-- Kiwi topping -->
+    <g transform="translate(15, 12) scale(0.8)">
+      <circle cx="20" cy="20" r="16" fill="#84CC16" stroke="#4D7C0F" stroke-width="2"/>
+      <circle cx="20" cy="20" r="7" fill="#ECFCCB"/>
+      <circle cx="16" cy="15" r="1" fill="#14532D"/>
+      <circle cx="24" cy="15" r="1" fill="#14532D"/>
+      <circle cx="25" cy="24" r="1" fill="#14532D"/>
+      <circle cx="15" cy="24" r="1" fill="#14532D"/>
+    </g>
+
+    <!-- Strawberry topping -->
+    <g transform="translate(48, 6) scale(0.75)">
+      <path d="M20,10 C35,10 40,25 35,45 C30,58 20,68 20,68 C20,68 10,58 5,45 C0,25 5,10 20,10 Z" fill="#EF4444"/>
+      <circle cx="16" cy="28" r="1.5" fill="#FEF08A"/>
+      <circle cx="25" cy="34" r="1.5" fill="#FEF08A"/>
+      <path d="M14,12 C10,5 5,8 8,14 C12,12 18,12 20,10 C22,12 28,12 32,14 C35,8 30,5 26,12 Z" fill="#22C55E"/>
+    </g>
+
+    <!-- Chia seeds & Almond flakes -->
+    <circle cx="35" cy="46" r="1.5" fill="#1F2937"/>
+    <circle cx="42" cy="48" r="1.5" fill="#1F2937"/>
+    <circle cx="76" cy="44" r="1.5" fill="#1F2937"/>
+    <ellipse cx="68" cy="42" rx="4" ry="2" fill="#FDE68A"/>
+    <ellipse cx="84" cy="45" rx="3.5" ry="1.8" fill="#FDE68A"/>
+  </g>
+
+  <!-- ===== PROMO BADGE (TOP LEFT) ===== -->
+  <g transform="translate(24, 24)">
+    <rect width="180" height="54" rx="27" fill="url(#badgeGreen)" filter="url(#shadowZero)"/>
+    <text x="90" y="24" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">
+      PAGUE 1, LEVE 2
+    </text>
+    <text x="90" y="42" fill="#D1FAE5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">
+      🍃 ZERO AÇÚCAR
+    </text>
+  </g>
+
+  <!-- ===== COMPLEMENTS BADGE (BOTTOM RIGHT) ===== -->
+  <g transform="translate(290, 415)">
+    <rect width="186" height="42" rx="21" fill="#047857" stroke="#FFFFFF" stroke-width="2" filter="url(#shadowZero)"/>
+    <text x="93" y="26" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">
+      + 9 COMPLEMENTOS GRÁTIS
+    </text>
+  </g>
+</svg>
